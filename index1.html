@@ -11,7 +11,8 @@
     <header>
         <div class="container">
             <h1>II Seminário EAD: Desafios e Possibilidades</h1>
-            <p>Evento online e presencial | 20 de Outubro, 2024 | 9h - 18h</p>
+            <p>Evento online e presencial | 06 de Novembro, 2024 | 18h - 22h</p>
+            <div id="countdown"></div> <!-- Contagem regressiva aqui -->
         </div>
     </header>
 
@@ -42,6 +43,25 @@
         </div>
     </section>
 
+    <!-- Nova Seção de Patrocinadores -->
+    <section id="patrocinadores">
+        <div class="container">
+            <h2>Patrocinadores</h2>
+            <div class="patrocinadores-grid">
+                <div class="patrocinador" onclick="openModal('Patrocinador A')">
+                    <img src="https://novo.ufra.edu.br/images/LOGO_70_anos_Ufra.png" alt="Patrocinador A">
+                </div>
+                <div class="patrocinador" onclick="openModal('Patrocinador B')">
+                    <img src="https://liccomp.ufra.edu.br/images/LogoCursoLC_Menor.jpg" alt="Patrocinador B">
+                </div>
+                <div class="patrocinador" onclick="openModal('Patrocinador C')">
+                    <img src="https://novo.ufra.edu.br/images/proex.png" alt="Patrocinador C">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de redes sociais e footer -->
     <section id="redes-sociais">
         <div class="container">
             <h2>Siga o Evento nas Redes Sociais</h2>
@@ -59,6 +79,17 @@
             <p>&copy; 2024 II Seminário EAD. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- Botão "Voltar ao topo" -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">&#8679; Topo</button>
+
+    <!-- Modal para patrocinadores -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-info"></p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
