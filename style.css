@@ -1,0 +1,111 @@
+/* Estilo retrô e responsividade */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #A25752;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #572D31;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #FFE4C4;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #FFE4C4;
+}
+
+section {
+    margin: 40px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #FFE4C4;
+    margin-bottom: 20px;
+}
+
+section p, section ul {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+#redes-sociais {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #572D31;
+    padding: 10px 0;
+    text-align: center;
+    color: #FFE4C4;
+    font-size: 0.9rem;
+}
+
+/* Responsividade para Android */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p, section ul {
+        font-size: 1rem;
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+}
